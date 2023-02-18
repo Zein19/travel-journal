@@ -10,6 +10,7 @@ header{
   color: white;
   background-color: navy;
   padding: 1.5em;
+  width: 100%;
 }
 
 .card{
@@ -17,11 +18,15 @@ header{
   margin-left: 1.25em;
   margin-right: 1.25em;
   margin-bottom: 1em;
+}
+
+.flex{
   display: flex;
 }
 
 .image{
-  width: 25%;
+  width: 20em;
+  height: 100%;
 }
 
 .card-info{
@@ -40,6 +45,10 @@ a{
   color: gray;
 }
 
+a:hover{
+  color: lightgrey;
+}
+
 .card-title{
   margin-top: 1em;
   padding-bottom: 1em;
@@ -48,4 +57,14 @@ a{
 .card-date{
   letter-spacing: 1px;
   padding: 1em;
+}
+
+@media (max-width: 700px){
+  .flex{
+    display: block;
+  }
+
+  .image,.card-info{
+    width: 100%;
+  }
 }
